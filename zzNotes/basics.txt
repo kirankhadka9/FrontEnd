@@ -1,0 +1,6 @@
+terms : 
+- component mount : component rakhney.
+- component unmount : component nikaldiney.
+
+always include "setState" and "navigate" inside useEffect or buttonClick(onClick) only.=>else error
+

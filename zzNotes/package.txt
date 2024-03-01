@@ -1,0 +1,18 @@
+
+pkg :
+i) npm i react-router-dom : routing ko lagi.
+
+
+
+
+--------------------pkg info ---------
+i) npm i react-router-dom : routing ko lagi.
+                           >ko inbuilt :(import garna parxa)
+                          -<BrowseRouter></BrowseRouter>
+                          -<NavLink></NavLink>
+                          - <Routes></Routes>
+                          -<Route ></Route>
+
+ii)
+iii)
+iv)

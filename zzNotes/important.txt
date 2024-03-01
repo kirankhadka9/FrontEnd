@@ -1,0 +1,29 @@
+
+>alt+ shift+ o to remove unused imports
+>in react console(terminal) will appear in browser
+>props lai {} ma rakhney component banauda
+
+>react ma js lai jaike {} ma halney
+
+----------------------------------------------
+browser console Warning: Functions are not valid as a React child.
+*IMP  Note : jaile ni 
+return (
+      <div> </div>   
+)
+// yesto vaneko array of html tag ma huna sakxa.
+-so yesto html tag lai jaile unique key as props pass garney
+
+i.e:
+const list = products.map((item,i)=>{
+            return (
+                  <div key={i}>
+                        {item.title} ,Category is :{item.category} ,Price is :{item.price}
+                  </div>
+            )
+      })
+      //such that each time html tag is stored as in array it has unique key.
+
+
+---------------------------------------------------------------
+

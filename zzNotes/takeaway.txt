@@ -1,0 +1,183 @@
+i>     -------DAY : 1
+> a react variable can store tag
+
+>  variable must be inside {} while calling inside TAGS AND also implement js operation using {}
+>variable lai tag vitra call garda matra {} use garney
+> return () ma sidahai () yesko vitra call garney
+
+>${} : yo {} ko vitra js ko operation garna ni milxa:
+>  let a = `${1+1}`
+
+>JS function can have only one return/ return type
+>also there must be only one wrapper in return
+
+>anything that is written inside will display in browser
+
+--------------------------------------------------------
+----------------element----------
+->  i): block element - 
+                - it takes all width 
+                - it always starts from new line
+                eg: div, h1, p..
+-> ii) : inline element -
+                - it only takes required width    
+                eg: span       
+----------------------
+ -> React ma jun sukai tag haru ni close garda/nagarda ni hunxa                
+-----------------------
+<a></a> tag : for linking
+to open in new tab ,add target.
+ie <a href="https://www.facebook.com/photo/?fbid=908365585880563&set=t.100004001977601" target " ">facebook</a> //target ma j rakhda ni hunxa      
+-----------------------
+<img> tag
+-always place images or files at public folder.
+-<img src="./gr.png"> //yesma . represents public folder
+i.e  : -   . at src of images refers to public folder
+-broken img : 
+-<img></img> yesko bichma kei hunnu hunna, space haru ni nahalney like <img> </img>, natra error awuxa  bcz yini haru self closing tag ho
+so self closing tag ko bich ma kei narakhney
+----------------------
+CSS:
+i)inline : obj is used for styling purpose.
+        -use {{ }}
+        -eg :     <div style={{textAlign:'center',color:`red`}}
+        -follow camelCase
+
+ii) external:xutai define garera import garney
+
+-it's a 3 step process:
+                   -define
+                   -import
+                   -use
+--------------------------
+index ma import gareko css lai index ma haleko compoent sabai le use garna milxa
+
+
+
+------------------------------DAY:2
+
+-COMPONENT : its a function with initial letter capital
+ex: function App(){}
+we call component like calling html tag
+i.e : <App></App> OR <App />
+-shortcut:rafce,rafc,rfc
+
+-if value passed in props is other then string always wrap it by {}
+i.e name="suraj" age={22}
+    favFood={{['apple','mango']}}// 1st{} object kai vayo next{} chai pass garna lai
+    isMarried={false}
+
+-component can also be defined as custom tag.  
+
+-inbuilt props(i.e attributes) are only supported in inbuilt tags.i.e in html tag [custom ma mildaina]
+
+
+-props and children
+   -<div props....... >children</div>
+
+-------------------------------------------DAY:3--------------------------------------------
+-props through destructuring.
+
+-jsx: extension (for component)
+    - combination of javascript and html(i.e supports both)
+
+-{}  -is also like a function that returns maximum of one value only.[limitation of {}]
+          -eg: {name},{address}
+     -it can have empty {} also which means function with no return value.
+     -{
+        if(){}else{}// yo support gardaina so ternary(?) use garxam.
+     }
+     i.e :  { age<18 ? <div>Under age.</div>
+      :age>=18 && age <=60 ? <div>Adult.</div>
+      :<div>Old.</div>
+      } // : le each ko kaam garxa and for hudaina.
+      -ternary lai ni {} ma halney.
+
+      -limitation of ternary operator:
+            - it must have else (i.e : ) part.
+          -ternary ko last ma :null rakhey natra
+
+-limitation of {}
+     -it doesn't support if else , can't define variable inside {}, loops/nested loops
+----------
+-Boolean are not shown in browser , for this we have to add some logic.
+   -eg: {isMarried?"yes":"No"}
+
+   -don't call object inside html tag's children(info ={name:"sdf",address: "pharping", fatherName: "raj"})
+         error example <div>{
+                Information: {info};//error
+         }</div>
+     eg:to properly call --Information : info.address;
+ ------------------------------------------------------------
+
+ //onClick ma:
+//-handleImg           fun used=    (e)=>{}   : if u don't have to pass value
+//-handleImg()        fun used=     ()=>{return ((e)=>{})}        : if u have to pass value    
+
+
+--------------------------
+
+   > Routing:
+-BEFORE working with react router dom we have to wrrap <App></App> component by <Browserouter></Browserouter>.
+
+in main file (i.e: index.js)
+     <BrowserRouter>
+  {/* <React.StrictMode> */}
+    {/* <App /> */}
+    <App></App>
+  {/* </React.StrictMode> */}
+</BrowserRouter>
+-such that now every component inside app can work/support routing .
+
+
+
+
+
+
+
+
+
+-------------------------------------------
+                         DAY-6:
+
+  -Toogle
+  -Rendering: page will render when state variable is changed. ()
+
+-------------------------------
+(interview ques )
+  -useEffect : its a asynchronous function                   
+  -    useEffect function will run for first render but from 2nd render the execution of function will depends on its dependency   
+
+  -------------
+  useEffect -> cleanUp function ://cleanup function are those function returned by useEffect function
+      // cleanup function doesn't run in first render.
+      // from only 2nd render will the cleanup function get executed(Note : dependency variable must change too)
+      //Normally top to down execution but here (not in first render but after 2nd render), initially cleanup function gets executed and then from upwards like it usually does.  
+        //when component is unmount , nothing gets executed except cleanup function
+
+
+      --------------------------
+
+
+-      useState : variable define garna.
+
+
+
+-----------
+
+
+
+eg:
+<input value="suraj"/> : in this tag whatever is kept in value it'll be displayed in the browser(input) (Note :htmlFor use gaexam label tag ma)
+
+-harek input ko lagi value ra onChange((e)=>{}) chaninxa . (euta bata ni milxa but pkg chainxa.)
+
+----------------------
+
+                 value             onChange:
+
+for all          value              e.target.value
+
+checkbox         checked            e.target.checked
+
+radioBtn          checked            e.target.value
