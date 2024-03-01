@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Recursive&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    position: relative;
+}
+.sidebar nav{
+    padding:50px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size:20px;
+    padding :20px;
+}
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+   
+}
+.sidebar{
+   background-color: rgb(167, 166, 166); 
+   width: 378px;
+   font-family: 'Fira Sans',sans-serif;
+   height: 100vh;
+   transition: transform 0.3s ease-in;
+}
+.main{
+    /* background-color: red; */
+    width:90vw;
+}
+.infocontainer{
+    /* background-color:blueviolet; */
+    height: 54vh;
+    width: 70vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.hello{
+    font-size: 65px;
+}
+
+.about{
+    font-size: 40px;
+}
+.moreabout{
+    font-size: 20px;
+    font-family: 'Fira Sans',sans-serif;
+
+}
+.buttons{
+    margin-top: 34px;
+}
+.btn{
+    padding: 11px;
+    border-radius: 38px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 23px;
+    margin:0 9px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 17px;   
+}
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+
+}
+
+.hamburger{
+    position:absolute;
+    top:10px;
+    left:10px;
+    cursor: pointer;
+}
+.sidebargo{
+    transform: translate(-450px,0px);
+    position:absolute;
+    
+
+}
+.cross{
+    margin-left: 262px;
+}
