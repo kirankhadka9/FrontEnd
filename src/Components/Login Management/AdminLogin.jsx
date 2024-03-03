@@ -50,7 +50,7 @@ const AdminLogin = () => {
               <input
                 // className="email"
                 type="email"
-                placeholder="Eg : abcd@gmal.com"
+                placeholder="Eg : abcd@gmail.com"
                 id="email"
                 value={email}
                 onChange={(e) => {
@@ -66,7 +66,7 @@ const AdminLogin = () => {
               <input
                 // className="password"
                 type="password"
-                placeholder="Eg : $un123@#"
+                placeholder="Eg : $alexandor@1234#"
                 id="pw"
                 value={password}
                 onChange={(e) => {
@@ -87,7 +87,7 @@ const AdminLogin = () => {
               // className="forgot password"
               style={{ cursor: "pointer" }}
               onClick={() => {
-                navigate("/admin/forgot-password");
+                navigate("/admin/sign-up/forgot-password");
               }}
             >
               <u>Forgot Password</u>

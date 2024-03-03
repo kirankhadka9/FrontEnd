@@ -34,7 +34,7 @@ const ReactRouter = () => {
 
               <Outlet></Outlet>
               <br />
-              {/* <div style={{background:"purple", marginTop:"160px" }}>This is Footer</div> */}
+              
             </div>
           }
         >
@@ -50,7 +50,7 @@ const ReactRouter = () => {
             }
           ></Route>
 
-<Route
+          <Route
             path="admin"
             element={
               <div>

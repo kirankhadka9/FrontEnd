@@ -16,8 +16,12 @@ import ReadAllProductw1 from "./Website1/ReadAllProductw1.jsx";
 import ReadAllProductw2 from "./website2/ReadAllProductw2.jsx";
 import ReadAllProductAPI from "./WebsiteAPI/ReadAllProductAPI.jsx";
 import ReadAllProductw3 from "./Website3/ReadAllProductw3.jsx";
-import SearchBar from "./SearchBar/SearchBar.jsx";
+
 import SearchAndCompare from "./WebsiteAllSearch/SearchAndCompare.jsx";
+import SortBy from "./SearchBar/SortBy.jsx";
+import SearchBar from "./SearchBar/SearchBar.jsx";
+
+
 //import SearchAndCompare from "./WebsiteAllSearch/SearchAndCompare.jsx";
 
 
@@ -48,14 +52,20 @@ const MyApp = () => {
           </Routes>
         </div>
         <div className="m-8 flex flex-col justify-center max-w-lg">
-          <SearchBar></SearchBar>
+         <SearchBar></SearchBar>
+        
         </div>
-      
-      <SearchAndCompare></SearchAndCompare>
-     <ReadAllProductw1></ReadAllProductw1>
-     <ReadAllProductw2></ReadAllProductw2>
+
+
+
+        <ReadAllProductw1></ReadAllProductw1>
+        <ReadAllProductw2></ReadAllProductw2>
+      {/* <SortBy></SortBy> */}
+      {/* <SearchAndCompare></SearchAndCompare>
+    
+    
      <ReadAllProductw3></ReadAllProductw3>
-     <ReadAllProductAPI></ReadAllProductAPI> 
+     <ReadAllProductAPI></ReadAllProductAPI>  */}
 
         <Fot></Fot>
 

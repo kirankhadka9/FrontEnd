@@ -5,7 +5,7 @@ const SignUpNav = () => {
   return (
     <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
       <NavLink
-        to="/admin/login/sign-up"
+        to="/admin/sign-up/login"
         style={{
           marginRight: "30px", 
           borderRadius: "5px", 
